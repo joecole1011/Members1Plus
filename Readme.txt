@@ -10,3 +10,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src>"node_modules/bootstrap/dist/js/bootstrap.min.js"</script>
+
+
+    git remote add origin https://github.com/joecole1011/Members1Plus.git
+
+    git init
+    git add .
+    git commit -m "first commit"
+    git branch -M main
+    git push -u origin main
