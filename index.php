@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css ">
 
@@ -40,10 +40,10 @@
         </div>
     </div>
 
-                        <footer class="card bg-dark text-center py-3 text-white">
-                        Copyright ©2024. All rights reserved Supported by Kimzun.<a href="https://www.facebook.com/akawit7">Kimzun</a>
+    <footer class="card bg-dark text-center py-3 text-white">
+        Copyright ©2024. All rights reserved Supported by Kimzun.<a href="https://www.facebook.com/akawit7">Kimzun</a>
 
-                        </footer>
+    </footer>
 
 
 

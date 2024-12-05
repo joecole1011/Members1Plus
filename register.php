@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css ">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css ">
 
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<?php include_once('includes/navbar.php') ?>
+    <?php include_once('includes/navbar.php') ?>
 
     <div class="container">
         <div class="row">
@@ -34,14 +34,14 @@
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fa-solid fa-at"></i></div>
                                 </div>
-                                <input type="text" class="form-control" id="email" name="email"  placeholder="example@domain.com">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="example@domain.com">
                             </div>
 
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fa-solid fa-phone-volume"></i></div>
                                 </div>
-                                <input type="text" class="form-control" id="phone"  name="phone" placeholder="เบอร์โทรศัพท์">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="เบอร์โทรศัพท์">
                             </div>
 
                             <div class="input-group mb-2 mr-sm-2">
@@ -74,6 +74,10 @@
             </div>
         </div>
     </div>
+    <footer class="card bg-dark text-center py-3 text-white">
+        Copyright ©2024. All rights reserved Supported by Kimzun.<a href="https://www.facebook.com/akawit7">Kimzun</a>
+
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
