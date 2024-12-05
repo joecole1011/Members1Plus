@@ -65,6 +65,9 @@
 
                             </textarea>
                         </div>
+
+                        <a href="profile-edit.php" class="btn btn-warning float-right">แก้ไขข้อมูล</a>
+
                     </div>
                 </div>
             </div>
