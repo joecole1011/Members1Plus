@@ -1,7 +1,3 @@
-<?php
-       echo '<pre>',print_r($_POST),'</pre>';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +21,7 @@
                 <div class="card">
                     <h5 class="card-header text-center">สมัครสมาชิก</h5>
                     <div class="card-body">
-                        <form class="form" id="formRegister" method="post" action="">
+                        <form class="form" id="formRegister" method="post" action="php/createMember.php">
 
                             <div class="input-group mb-2 mr-sm-2">
                                 <div class="input-group-prepend">
@@ -68,9 +64,11 @@
                                 </div>
                                 <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm Password">
                             </div>
+                            <div class="form-group mb-2 mr-sm-2">
+                                <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6Ld6RJQqAAAAACjKwkFXbJ2yazcHgBvhFF7Ih2Cq"></div>
+                            </div>
 
-
-                            <button type="submit" class="btn btn-primary btn-block  md-2">สมัครสมาชิก</button>
+                            <button type="submit" name="submit" id="submit" disabled class="btn btn-primary btn-block  md-2">สมัครสมาชิก</button>
                             <span class="float-right">เข้าสู่ระบบ <a href="login.php">คลิกที่นี่</a></span>
                         </form>
                     </div>
@@ -88,6 +86,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
     <script>
         //formRegister
         $(document).ready(function() {
@@ -160,6 +160,9 @@
                 }
             });
         })
+        function recaptchaCallback() {
+            $('#submit').removeAttr('disabled');
+        }
     </script>
 </body>
 
